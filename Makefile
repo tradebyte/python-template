@@ -12,6 +12,9 @@ export PRECOMMIT
 images:
 	docker-compose build
 
+up:
+	docker-compose up mongo rabbitmq postgres
+
 lint:
 	docker-compose run --rm py find . -name "*.py" -exec pylint -ry {} +
 
