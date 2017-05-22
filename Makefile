@@ -21,3 +21,6 @@ install_pre_commit:
 
 test:
 	docker-compose run --rm py python -m unittest
+
+coverage:
+	docker-compose run --rm py sh -c 'coverage run -m unittest && coverage html && coverage report'
