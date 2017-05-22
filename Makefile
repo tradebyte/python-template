@@ -18,3 +18,6 @@ lint:
 install_pre_commit:
 	echo "$$PRECOMMIT" > .git/hooks/pre-commit
 	chmod +x .git/hooks/pre-commit
+
+test:
+	docker-compose run --rm py python -m unittest
