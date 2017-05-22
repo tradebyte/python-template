@@ -9,6 +9,8 @@ make lint
 endef
 export PRECOMMIT
 
+all: images up
+
 images:
 	docker-compose build
 
