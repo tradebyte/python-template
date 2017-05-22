@@ -4,18 +4,18 @@ services:
     build: .
     image: "py"
     volumes:
-     - .:/code
+      - .:/code
     #command: python main.py
 	# other handy stuff:
   mongo:
     image: "mongo"
     #ports:
-    # - "27017:27017"
+    #  - "27017:27017"
   rabbitmq:
     image: "rabbitmq:management-alpine"
 		# admin dashboard http://localhost:8080/ user:guest pw:guest
     ports:
-     - "8080:15672"
+		  - "8080:15672"
 	postgres:
     image: postgres
     #ports:
