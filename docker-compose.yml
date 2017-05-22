@@ -1,0 +1,8 @@
+version: '2'
+services:
+  py:
+    build: .
+    image: "py"
+    volumes:
+     - .:/code
+    #command: python main.py
