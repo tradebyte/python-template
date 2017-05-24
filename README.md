@@ -57,3 +57,12 @@ make install_pre_commit
 ```shell
 docker-compose run --rm py <your command>
 ```
+
+## Hints
+### Exporting all files
+For example if you want to use this template to start working in an other repository.
+
+```shell
+git archive master | tar -x -C /somewhere/else
+
+```
