@@ -4,8 +4,13 @@ CFLAGS = -c -g -D $(TARGET)
 
 # Content of the pre-commit hook
 define PRECOMMIT
-#!/bin/sh
-make lint
+#!/usr/bin/env sh
+
+main() {
+	make lint
+}
+
+main
 endef
 export PRECOMMIT
 
