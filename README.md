@@ -7,6 +7,8 @@ Predefined containers include:
 * MongoDB
 * PostgreSQL
 * RabbitMQ
+* MySQL
+* phpMyAdmin
 
 ## Quickstart
 
