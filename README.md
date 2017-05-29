@@ -51,6 +51,12 @@ make lint
 make install_pre_commit
 ```
 
+## Starting an interactive python shell
+
+```shell
+make shell
+```
+
 ## Running custom commands in the python container
 
 ```shell
