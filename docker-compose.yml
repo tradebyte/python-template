@@ -23,3 +23,20 @@ services:
     environment:
       - POSTGRES_PASSWORD=postgres
       - POSTGRES_DB=postgres
+
+  mysql:
+    image: mysql
+    # mysql user:root pw:mysql
+    environment:
+      - MYSQL_ROOT_PASSWORD=mysql
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    # admin dashboard http://localhost:8081/ user:root pw:mysql
+    # open with "make myadmin"
+    links:
+      - mysql:db
+    ports:
+      - "8081:80"
+    environment:
+      - PMA_PORT=8081

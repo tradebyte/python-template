@@ -20,7 +20,7 @@ images:
 	docker-compose build
 
 up:
-	docker-compose up mongo rabbitmq postgres
+	docker-compose up mongo rabbitmq postgres mysql phpmyadmin
 
 lint:
 	docker-compose run --rm py find . -name "*.py" -exec pylint -ry {} +
@@ -34,3 +34,9 @@ test:
 
 coverage:
 	docker-compose run --rm py sh -c 'coverage run -m unittest && coverage html && coverage report'
+
+mysql:
+	docker-compose run mysql sh -c 'exec mysql -h"mysql" -P"3306" -uroot -p"mysql"'
+
+myadmin:
+	browse http://localhost:8081

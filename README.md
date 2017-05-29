@@ -7,6 +7,8 @@ Predefined containers include:
 * MongoDB
 * PostgreSQL
 * RabbitMQ
+* MySQL
+* phpMyAdmin
 
 ## Quickstart
 
@@ -33,12 +35,9 @@ make coverage
 
 HTML coverage report will be dumped to ./htmlcov
 
-> We aim to get a minimum code coverage of 95%
 > Remember to use coverage before committing so the build will not fail after pushing!
 
 ## Linting
-
-> Every file with a rating below 8.0 will be rejected after pushing a commit!
 
 ### Running the linter
 
