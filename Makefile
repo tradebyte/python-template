@@ -40,3 +40,6 @@ mysql:
 
 myadmin:
 	browse http://localhost:8081
+
+shell:
+	docker-compose run --rm py ipython
