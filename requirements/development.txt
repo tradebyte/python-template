@@ -1,5 +1,5 @@
 # development.txt
--r production.txt
+-r staging.txt
 
 coverage
 ipython
