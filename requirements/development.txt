@@ -1,3 +1,6 @@
+# development.txt
+-r production.txt
+
 coverage
 ipython
 pylint
