@@ -1,6 +1,4 @@
 # development.txt
--r staging.txt
+-r test.txt
 
-coverage
 ipython
-pylint

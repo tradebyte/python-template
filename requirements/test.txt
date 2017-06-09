@@ -1,2 +1,5 @@
 # test.txt
--r development.txt
+-r staging.txt
+
+coverage
+pylint
