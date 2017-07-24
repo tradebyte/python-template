@@ -2,7 +2,7 @@ version: '2'
 services:
   py:
     build: .
-    image: "py"
+    image: "py-project"
     volumes:
       - .:/code
     #command: python main.py
